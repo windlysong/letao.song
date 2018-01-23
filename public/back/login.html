@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <title>乐淘管理系统-登录</title>
     <link rel="stylesheet" href="./lib/bootstrap/css/bootstrap.css" />
+    <link rel="stylesheet" href="./lib/bootstrap-validator/css/bootstrapValidator.css">
+    <link rel="stylesheet" href="./lib/nprogress/nprogress.css">
     <link rel="stylesheet" href="./css/common.css" />
 </head>
 
@@ -18,15 +20,15 @@
                 <div class="panel-body">
                     <form class="form-horizontal">
                         <div class="form-group">
-                            <label for="userName" class="col-sm-3 control-label">用户名</label>
+                            <label for="username" class="col-sm-3 control-label">用户名</label>
                             <div class="col-sm-9">
-                                <input type="text" class="form-control" id="userName" placeholder="请输入用户名">
+                                <input type="text" name="username" class="form-control" autocomplete="off" id="userName" placeholder="请输入用户名">
                             </div>
                         </div>
                         <div class="form-group">
                             <label for="password" class="col-sm-3 control-label">密&nbsp;&nbsp;&nbsp;码</label>
                             <div class="col-sm-9">
-                                <input type="password" class="form-control" id="password" placeholder="请输入密码">
+                                <input type="password" name="password" class="form-control" id="password" placeholder="请输入密码">
                             </div>
                         </div>
                         <div class="form-group">
@@ -40,8 +42,8 @@
                         </div>
                         <div class="form-group">
                             <div class="col-sm-offset-3 col-sm-6">
-                                <button type="submit" class="btn btn-info reset_left">重置</button>
-                                <button type="submit" class="btn btn-primary login_right">登录</button>
+                                <button type="reset" class="btn btn-info pull_left">重置</button>
+                                <button type="submit" class="btn btn-primary pull_right">登录</button>
                             </div>
                         </div>
                     </form>
@@ -52,6 +54,8 @@
 
     <script src="./lib/jquery/jquery.js"></script>
     <script src="./lib/bootstrap/js/bootstrap.js"></script>
+    <script src="./lib/bootstrap-validator/js/bootstrapValidator.js"></script>
+    <script src="./lib/nprogress/nprogress.js"></script>
     <script src="./js/common.js"></script>
     <script src="./js/login.js"></script>
 </body>

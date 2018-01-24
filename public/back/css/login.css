@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+/* 登录页面 */
+.login_bg {
+    background:url("../images/bg.jpg");
+}
+
+.mt_150 {
+    margin-top: 150px;
+}
+
+.mt_150 h4 {
+    text-align: center;
+}
+

@@ -1,0 +1,110 @@
+@charset "UTF-8";
+
+/* 左边栏开始 */
+.lt_aside { 
+    width: 180px;
+    height: 100%;
+    color: rgb(2, 167, 84);
+    background-image:url('./../images/bg.jpg');
+    position: absolute;
+    left: 0;
+    transition: all 1s; 
+}
+.lt_aside.current {
+    left: -180px;
+}
+
+.lt_aside .brand a{
+    display: block;
+    width: 180px;
+    height: 50px;
+    background-color: #ccc;
+    color: rgb(2, 167, 84);
+    line-height: 50px;
+    font-size: 30px;
+    text-align: center;
+    
+}
+
+.lt_aside .user {
+    margin-top: 10px;
+    font-size: 16px;
+    font-style: normal;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+.lt_aside .user img{
+    width: 120px;
+    height: 120px;
+    border-radius: 100%; 
+}
+
+.lt_aside .user p {
+    height: 40px;
+    line-height: 40px;
+    cursor: pointer;
+}
+
+.lt_aside .nav {
+    text-align: center;
+}
+
+.lt_aside .nav a {
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    color: rgb(2, 167, 84); 
+    border: 3px solid transparent;
+}
+
+.lt_aside .nav a.current {
+    border-left-color: rgb(2, 167, 84);
+    background-color: #1d1f55;
+}
+
+.lt_aside .nav .child {
+    display: none;
+}
+.lt_aside .nav .child a {
+    padding-left: 18px;
+    font-size: 12px;
+}
+
+
+
+/* 右边栏开始 */
+.lt_main {
+    padding-left: 180px;
+    height: 100%;
+    background-color: #fff;
+    transition: all 1s;
+}
+.lt_main.current {
+    padding-left: 0px;
+}
+/* 顶部通栏 */
+.lt_main .topbar {
+    height: 50px;
+    background-color: #100;
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.lt_main .topbar a {
+    line-height: 50px;
+    padding: 0px 10px 0px 10px;
+    
+}
+.lt_main .foot_nav {
+    font-size: 18px;
+}
+
+/* 内容区域 */
+/* .lt_main .content_zoo  */
+.pic_left,
+.pic_right {
+    width: 45%;
+    height: 600px;
+    padding: 20px;
+}
